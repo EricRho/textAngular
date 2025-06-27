@@ -1,14 +1,10 @@
 {
-  "name": "textangular",
-  "version": "1.5.16",
+  "name": "dash-textangular",
+  "version": "1.5.17",
   "description": "A radically powerful Text-Editor/Wysiwyg editor for Angular.js",
   "maintainers": [
-    {
-      "name": "Fraywing"
-    },
-    {
-      "name": "SimeonC"
-    }
+    "Fraywing",
+    "SimeonC"
   ],
   "keywords": [
     "AngularJS",
@@ -62,5 +58,12 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/fraywing/textAngular.git"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/fraywing/textAngular/issues"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "author": "ERho"
 }
