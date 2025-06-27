@@ -108,21 +108,23 @@ if(_browserDetect.ie > 8 || _browserDetect.ie === undefined){
 			}
 		}
 	}
+
+    // ERHO: Remove adding empty <style> tag 
 	/* istanbul ignore next: preference for stylesheet loaded externally */
-	if(!sheet){
-		// this sheet is used for the placeholders later on.
-		sheet = (function() {
-			// Create the <style> tag
-			var style = document.createElement("style");
-			/* istanbul ignore else : WebKit hack :( */
-			if(_browserDetect.webkit) style.appendChild(document.createTextNode(""));
+	// if(!sheet){
+	// 	// this sheet is used for the placeholders later on.
+	// 	sheet = (function() {
+	// 		// Create the <style> tag
+	// 		var style = document.createElement("style");
+	// 		/* istanbul ignore else : WebKit hack :( */
+	// 		if(_browserDetect.webkit) style.appendChild(document.createTextNode(""));
 
-			// Add the <style> element to the page, add as first so the styles can be overridden by custom stylesheets
-			document.getElementsByTagName('head')[0].appendChild(style);
+	// 		// Add the <style> element to the page, add as first so the styles can be overridden by custom stylesheets
+	// 		document.getElementsByTagName('head')[0].appendChild(style);
 
-			return style.sheet;
-		})();
-	}
+	// 		return style.sheet;
+	// 	})();
+	// }
 
 	// use as: addCSSRule("header", "float: left");
 	addCSSRule = function(selector, rules) {
