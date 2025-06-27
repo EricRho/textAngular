@@ -1,7 +1,7 @@
 {
   "name": "dash-textangular",
   "version": "1.5.17",
-  "description": "A radically powerful Text-Editor/Wysiwyg editor for Angular.js",
+  "description": "Fork of textAngular",
   "maintainers": [
     "Fraywing",
     "SimeonC"
